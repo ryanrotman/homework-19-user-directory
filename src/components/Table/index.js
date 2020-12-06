@@ -3,7 +3,7 @@ import API from "../../utils/API";
 
 function Table() {
 
-    const [employeeList, setEmployeeList] = useState({});
+    const [employeeList, setEmployeeList] = useState([]);
 
     useEffect(() => {
         API.getEmployees().then(res => {
@@ -27,7 +27,7 @@ function Table() {
                     {employeeList.map(employee => {
                         return (
                             <tr>
-                                <td scope="row"><img src={employee.picture.thumbnail} alt={employee.name.first + " " + employee.name.last} /></td>
+                                <td><img src={employee.picture.thumbnail} alt={employee.name.first + " " + employee.name.last} /></td>
                                 <td>{employee.name.first + " " + employee.name.last}</td>
                                 <td>{employee.phone}</td>
                                 <td>{employee.email}</td>
