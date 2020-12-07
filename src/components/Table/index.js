@@ -27,10 +27,10 @@ function Table() {
                     {employeeList.map(employee => {
                         return (
                             <tr>
-                                <td><img src={employee.picture.thumbnail} alt={employee.name.first + " " + employee.name.last} /></td>
-                                <td>{employee.name.first + " " + employee.name.last}</td>
-                                <td>{employee.phone}</td>
-                                <td>{employee.email}</td>
+                                <td className="align-middle"><img src={employee.picture.medium} alt={employee.name.first + " " + employee.name.last} /></td>
+                                <td className="align-middle">{employee.name.first + " " + employee.name.last}</td>
+                                <td className="align-middle">{employee.phone}</td>
+                                <td className="align-middle">{employee.email}</td>
                             </tr>
                         )
                     })}
