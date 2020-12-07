@@ -1,9 +1,9 @@
 function Filter() {
     return (
-        <div className="select text-center">
+        <div className="select text-center align-middle">
             <select>
                 {/* FIXME: figure out how to populate this using the data from the API call */}
-                <option>Select State</option>
+                <option>Filter by State</option>
                 <option>Alabama</option>
                 <option>Alaska</option>
                 <option>Arizona</option>
