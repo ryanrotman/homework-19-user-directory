@@ -26,7 +26,7 @@ function Table() {
                 <tbody>
                     {employeeList.map(employee => {
                         return (
-                            <tr>
+                            <tr key={employee.id.value}>
                                 <td className="align-middle"><img src={employee.picture.medium} alt={employee.name.first + " " + employee.name.last} /></td>
                                 <td className="align-middle">{employee.name.first + " " + employee.name.last}</td>
                                 <td className="align-middle">{employee.phone}</td>
