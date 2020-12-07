@@ -13,7 +13,7 @@ function Table() {
     }, []);
 
     return (
-        <div className="container">
+        // <div className="container">
             <table className="table table-striped">
                 <thead className="thead-dark">
                     <tr>
@@ -38,7 +38,7 @@ function Table() {
                     })}
                 </tbody>
             </table>
-        </div>
+        // </div>
     );
 }
 
