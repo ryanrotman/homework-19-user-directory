@@ -17,7 +17,7 @@ function Table() {
             <table className="table table-striped">
                 <thead className="thead-dark">
                     <tr>
-                        <th scope="col">Image</th>
+                        <th scope="col"></th>
                         <th scope="col">Name</th>
                         <th scope="col">Phone</th>
                         <th scope="col">Email</th>
