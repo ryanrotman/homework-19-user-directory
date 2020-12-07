@@ -8,9 +8,24 @@ function App() {
         <div>
             <Navbar />
             <br />
-            <Filter />
-            <br />
-            <Table />
+            <div className="container">
+                <div className="row">
+                    <div className="col text-center">
+                        FIXME: Sort by Last Name Asc
+                        <Filter />
+                    </div>
+                    <div className="col text-center">
+                    FIXME: Sort by Last Name Desc
+                        <Filter />
+                    </div>
+                    <div className="col text-center">
+                        Filter by State
+                        <Filter />
+                    </div>
+                </div>
+                <br />
+                <Table />
+            </div>
         </div>
     );
 }
