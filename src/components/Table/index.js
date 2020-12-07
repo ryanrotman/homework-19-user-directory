@@ -21,6 +21,7 @@ function Table() {
                         <th scope="col">Name</th>
                         <th scope="col">Phone</th>
                         <th scope="col">Email</th>
+                        <th scope="col">State</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -31,6 +32,7 @@ function Table() {
                                 <td className="align-middle">{employee.name.first + " " + employee.name.last}</td>
                                 <td className="align-middle">{employee.phone}</td>
                                 <td className="align-middle">{employee.email}</td>
+                                <td className="align-middle">{employee.location.state}</td>
                             </tr>
                         )
                     })}
