@@ -2,6 +2,8 @@ import './App.css';
 import Navbar from "./components/Navbar";
 import Table from "./components/Table";
 import Filter from "./components/Filter";
+import SortAsc from "./components/SortAsc";
+import SortDesc from "./components/SortDesc";
 
 function App() {
     return (
@@ -11,15 +13,12 @@ function App() {
             <div className="container">
                 <div className="row">
                     <div className="col text-center">
-                        FIXME: Sort by Last Name Asc
-                        <Filter />
+                        <SortAsc />
                     </div>
                     <div className="col text-center">
-                    FIXME: Sort by Last Name Desc
-                        <Filter />
+                        <SortDesc />
                     </div>
                     <div className="col text-center">
-                        Filter by State
                         <Filter />
                     </div>
                 </div>
