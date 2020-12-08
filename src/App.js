@@ -67,7 +67,7 @@ function App() {
                 </div>
                 <br />
                 <Table
-                    list={employeeList.filter((emp) => emp.name.first + " " + emp.name.last).includes(searchValue)}
+                    list={employeeList.filter((emp) => (emp.name.first + " " + emp.name.last).toLowerCase().includes(searchValue.toLowerCase()))}
                 />
             </div>
         </div>
