@@ -1,4 +1,7 @@
 function Filter() {
+
+    // TODO: add this functionality in future development; an additional sort by state feature
+
     return (
         <div className="select text-center align-middle">
             <select>

@@ -3,9 +3,11 @@ import { useState, useEffect } from "react";
 import API from "../src/utils/API";
 import Navbar from "./components/Navbar";
 import Table from "./components/Table";
-import Filter from "./components/Filter";
+// import Filter from "./components/Filter"; TODO: uncomment this when functionality added
 import SortAscBtn from "./components/SortAsc";
 import SortDescBtn from "./components/SortDesc";
+
+{/* TODO: add functionality for Filter component; this is for a filter by state option */}
 
 function App() {
 
@@ -61,9 +63,9 @@ function App() {
                             sortDesc={SortDesc}
                         />
                     </div>
-                    <div className="col text-center">
+                    {/* <div className="col text-center"> TODO: uncomment this when functionality added
                         <Filter />
-                    </div>
+                    </div> */}
                 </div>
                 <br />
                 <Table
