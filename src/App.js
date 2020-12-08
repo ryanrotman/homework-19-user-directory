@@ -32,9 +32,17 @@ function App() {
         setEmployeeList([...employees]);
     };
 
+    const employeeSearch = (e) => {
+        e.preventDefault();
+        console.log("Search input: ", e.target.value);
+        setEmployeeList(e.target.value);
+    };
+
     return (
         <div>
-            <Navbar />
+            <Navbar
+                employeeSearch={employeeSearch}
+            />
             <br />
             <div className="container">
                 <div className="row">
