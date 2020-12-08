@@ -10,6 +10,7 @@ import SortDescBtn from "./components/SortDesc";
 function App() {
 
     const [employeeList, setEmployeeList] = useState([]);
+    const [searchValue, setSearchValue] = useState("");
 
     useEffect(() => {
         API.getEmployees().then(res => {
@@ -35,13 +36,17 @@ function App() {
     const employeeSearch = (e) => {
         e.preventDefault();
         console.log("Search input: ", e.target.value);
-        setEmployeeList(e.target.value);
+        setSearchValue(e.target.value);
+
+        // const filteredSearch = employeeList.filter((emp) => emp.name.first + " " + emp.name.last).includes(searchValue);
+        // setEmployeeList(filteredSearch);
     };
 
     return (
         <div>
             <Navbar
                 employeeSearch={employeeSearch}
+                searchValue = {searchValue}
             />
             <br />
             <div className="container">
@@ -62,7 +67,7 @@ function App() {
                 </div>
                 <br />
                 <Table
-                    list={employeeList}
+                    list={employeeList.filter((emp) => emp.name.first + " " + emp.name.last).includes(searchValue)}
                 />
             </div>
         </div>
