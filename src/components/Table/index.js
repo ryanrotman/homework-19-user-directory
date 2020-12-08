@@ -1,7 +1,7 @@
 function Table(props) {
 
     return (
-        <div class="table-responsive">
+        <div className="table-responsive">
             <table className="table table-striped">
                 <thead className="thead-dark">
                     <tr>
