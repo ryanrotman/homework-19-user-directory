@@ -8,6 +8,8 @@ The scope of this project is to create an employee/user directory that has sorti
 ## Notes
 This application uses the [Random User API](https://randomuser.me/) to populate a table of "employees" that shows their headshot, name, phone number, email, and state of residence.
 
+For future development I plan to add some additional functionality that will filter the employees based on their state of residence. I plan to build this using a dropdown menu where a state can be selected.
+
 ## Instructions
 This project can be opened and run in multiple ways.
 - You can use this application [here](https://ryanrotman.github.io/homework-19-user-directory/).
