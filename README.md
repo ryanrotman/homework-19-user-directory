@@ -1,9 +1,9 @@
-# Homework 19: Employee/User Directory
+# Employee/User Directory
 
 ## Description
-This repository holds the homework assignment for Week 19 of the [The Coding Boot Camp](https://techbootcamps.utexas.edu/coding/) through the University of Texas at Austin's Center for Professional Education.
+<!-- This repository holds the homework assignment for Week 19 of the [The Coding Boot Camp](https://techbootcamps.utexas.edu/coding/) through the University of Texas at Austin's Center for Professional Education. -->
 
-The scope of this project is to create an employee/user directory that has sorting and filtering functionality. This application is built using [React](https://reactjs.org/) and required us to use components within the UI, manage the component state, as well as respond to user events.
+This is an employee/user directory built with [React](https://reactjs.org/) that has sorting and filtering functionality, uses components within the UI, manages the component state, and responds to user events.
 
 ## Notes
 This application uses the [Random User API](https://randomuser.me/) to populate a table of "employees" that shows their headshot, name, phone number, email, and state of residence.
@@ -12,8 +12,8 @@ For future development I plan to add some additional functionality that will fil
 
 ## Instructions
 This project can be opened and run in multiple ways.
-- You can use this application [here](https://ryanrotman.github.io/homework-19-user-directory/).
-- You can also clone or fork this application from this [repository](https://github.com/ryanrotman/homework-19-user-directory) and then open it in your text editor of choice. You will also need access to a CLI. This project was created using VSCode and then run in the integrated terminal. Then run ```npm run start``` to launch the application.
+- You can use this application [here](https://ryanrotman.github.io/react-user-directory/).
+- You can also clone or fork this application from this [repository](https://github.com/ryanrotman/react-user-directory) and then open it in your text editor of choice. You will also need access to a CLI. This project was created using VSCode and then run in the integrated terminal. Then run ```npm run start``` to launch the application.
 
 ## Page Screenshots
 Employee Directory initial load populating data from the [Random User API](https://randomuser.me/).
